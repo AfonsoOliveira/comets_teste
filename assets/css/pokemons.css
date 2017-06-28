@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Pokemon GB';
+  src: url('../fonts/Pokemon GB.ttf');
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+body {
+  background-color: rgba(166,230,220,0.3);
+}
+
+.pokedex-content {
+  height: 541px;
+  margin: 20px auto;
+  position: relative;
+  width: 745px;
+}
+
+.table-content {
+  background-color: #F7F7F7;
+  color: #000000;
+  font-family: 'Pokemon GB';
+  height: 175px;
+  left: 54px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 151px;
+  width: 260px;
+  z-index: 20;
+}
+
+.table-content > table {
+  width: 100%;
+  height: 100%;
+}
+
+.table-content > table tr {
+  background-color: #F7F7F7;
+}
+
+.table-content > table tr:hover {
+  background-color: #CCCCCC;
+  cursor: pointer;
+}
+
+.table-content > table td {
+  vertical-align: middle;
+}
+
+.pokemon-detail {
+  border-radius: 8px;
+  font-family: 'Pokemon GB';
+  height: 112px;
+  left: 448px;
+  position: absolute;
+  top: 164px;
+  width: 240px;
+  z-index: 20;
+}
+
+.pokemon-image {
+  margin-top: 8px;
+}
+
+.pokemon-nome {
+  color: #000000;
+  left: 80px;
+  position: absolute;
+  top: 10px;
+}
+
+.pokemon-tipos {
+  color: #000000;
+  font-size: 8px;
+  left: 100px;
+  position: absolute;
+  top: 40px;
+}
+
+.pokemon-habilidades {
+  color: #000000;
+  font-size: 8px;
+  left: 100px;
+  position: absolute;
+  top: 60px;
+}
+
+.pokemon-movimentos {
+  color: #000000;
+  font-size: 8px;
+  left: 100px;
+  position: absolute;
+  top: 80px;
+}
+
+.pokedex-image {
+  height: 541px;
+  left: 50%;
+  margin-left: -372px;
+  margin-top: -270px;
+  position: absolute;
+  top: 50%;
+  width: 745px;
+  z-index: 10;
+}
+
+#modal-detalhes .modal-body {
+  padding: 0;
+  max-height: 450px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#modal-detalhes .list-group {
+  margin: 0;
+}
